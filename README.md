@@ -16,7 +16,7 @@ git clone https://github.com/yourusername/teen-social-media-safety.git
 Open index.html in any modern browser.
 
 
-No installation or build tools required — it's a simple, self-contained site.
+No installation or build tools required. It's a simple, self-contained site.
 
 ## Author
 Built with care by Ayat Adams 👩🏽‍💻 
