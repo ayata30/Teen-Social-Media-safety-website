@@ -1,0 +1,291 @@
+
+html {
+    
+    background-color: var(--bg-color);
+  
+}
+
+
+body {
+    /* Add a background color or image */
+    background-color: var(--bg-color); /* see bottom of file for color variables */
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+    /* Put space around the edges of the webpage */
+    margin: 50px;
+}
+
+
+
+h1{
+    background-color:rgb(148, 181, 238);
+}
+
+
+h2 {
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h4 {
+    color: #ac5921e2;
+}
+
+p {
+    text-align: center;
+}
+
+a,
+a * {
+  background-color: #88b2be;
+    
+}
+button{
+    background-color: rgb(148, 90, 190);
+ }
+button {
+
+    color: white;               /* text color */
+    border: none;               /* hides the default border */
+    padding: 5px 12px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: pointer;            /* makes the cursor change when over button */
+}
+
+button:hover {
+
+    color: #e63946;
+}
+button:active {
+  color: #28eb3f;
+}
+
+
+.header-container { /* Example A: This styles elements with class="header" */
+  display: flex;
+  flex-direction: column;
+  padding-top:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  text-align: center;
+
+}
+
+.header-item:nth-of-type(1){
+  width:50px;
+}
+
+.header-item:nth-of-type(2){
+  width: 50px;
+}
+
+#header-img{
+  max-width:200px;
+}
+
+#header-button{
+  text-align: center;
+  margin: 20px;
+cursor: pointer;
+}
+
+
+
+.footer { 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.navbar ul {
+  z-index: 1000; /* Ensures the navbar is on top of other elements */
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  margin-bottom: 10%;
+  background-color: #d5d2dd;
+}
+
+.navbar ul li {
+  float: left;
+  margin: 10px;
+  
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #8c3bbc;
+  background-color: #d4cceb;
+
+  margin: 0%;
+  padding: 0%;
+  
+  
+}
+
+.navbar ul li a:hover {
+  color: #eb5f28;
+}
+
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+
+
+}
+
+
+.rsvp-para {
+  width: 55%;
+  padding-right: 10px;
+}
+.rsvp-participants {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background-color: pink;
+
+  
+}
+
+
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* A semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); 
+
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-out;
+}
+#modal-image {
+  width: 100%;  /* Make sure the image fits in the modal */
+  max-width: 300px; /* Adjust the max width */
+  height: auto; /* Maintain aspect ratio */
+}
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 50px;
+    width: 55%;
+
+    /* Customize modal style here */
+    background-color: rgb(163, 180, 224);
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+
+}
+.modal-content {
+  background-color: rgb(138, 166, 213);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.close-btn {
+  background-color: #d0c1c1;
+  color: rgb(126, 124, 193);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-btn:hover {
+  background-color: #ff4040;
+}
+
+.dark-mode {
+background-color: #324180;
+color: #0c0404;
+
+}
+
+.dark-mode h1 {
+    color: #0d0e0f;
+}
+.dark-mode h2 {
+  color: #270a38;
+}
+
+.dark-mode a:visited * {
+ color: rgb(31, 28, 28);
+ background-color: #6168ae;
+}
+
+#theme-button {
+background-color: #7453da;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+:root {
+    /* Light Mode */
+    --bg-color: #9bc1cc;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
